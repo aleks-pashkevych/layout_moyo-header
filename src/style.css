@@ -1,3 +1,49 @@
+@import "normalize.css";
+
+
+
 body {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0, 20px;
+
+  font-family: Roboto, sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-transform:Uppercase;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.header__menu-list {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
   margin: 0;
+}
+
+.header__menu-link {
+  text-decoration: none;
+  color: #000;
+}
+
+.header__menu-link:hover {
+  color: #00ACDC;
+}
+
+.header__menu-active {
+  color: #00ACDC;
+  border-bottom: 2px solid #00ACDC;
+  /* line-height: 60px; */
+  padding-bottom: 20px;
 }

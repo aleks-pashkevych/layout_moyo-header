@@ -21,7 +21,6 @@ body {
   padding: 0 auto;
   margin-left: 50px;
   margin-right: 50px;
-
 }
 
 .header__menu-list {
@@ -35,7 +34,7 @@ body {
 .header__menu-link {
   text-decoration: none;
   color: #000;
-  height: 60px;
+  line-height: 60px;
 }
 
 .header__menu-link:hover {

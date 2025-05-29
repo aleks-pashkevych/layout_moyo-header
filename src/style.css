@@ -18,9 +18,8 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 auto;
-  margin-left: 50px;
-  margin-right: 50px;
+  margin: 0 auto;
+  width: 92%;
 }
 
 .header__menu-list {

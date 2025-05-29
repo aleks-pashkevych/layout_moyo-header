@@ -1,10 +1,7 @@
-@import "normalize.css";
-
-
+@import 'normalize.css';
 
 body {
   margin: 0 auto;
-  max-width: 1200px;
   padding: 0, 20px;
 
   font-family: Roboto, sans-serif;
@@ -14,19 +11,21 @@ body {
   font-size: 12px;
   line-height: 100%;
   letter-spacing: 0%;
-  text-transform:Uppercase;
+  text-transform: Uppercase;
 }
 
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 0;
+  padding: 40px 0;
+  margin-left: 50px;
+  margin-right: 50px;
 }
 
 .header__menu-list {
   display: flex;
-  gap: 20px;
+  gap: 21px;
   list-style: none;
   padding: 0;
   margin: 0;
@@ -38,12 +37,11 @@ body {
 }
 
 .header__menu-link:hover {
-  color: #00ACDC;
+  color: #00acdc;
 }
 
 .header__menu-active {
-  color: #00ACDC;
-  border-bottom: 2px solid #00ACDC;
-  /* line-height: 60px; */
+  color: #00acdc;
+  border-bottom: 3px solid #00acdc;
   padding-bottom: 20px;
 }

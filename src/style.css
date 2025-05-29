@@ -2,8 +2,8 @@
 
 body {
   margin: 0 auto;
-  padding: 0, 20px;
 
+  width: 1200px;
   font-family: Roboto, sans-serif;
   font-optical-sizing: auto;
   font-weight: 500;
@@ -40,7 +40,7 @@ body {
   color: #00acdc;
 }
 
-.header__menu-active {
+.is-active {
   color: #00acdc;
   border-bottom: 3px solid #00acdc;
   padding-bottom: 20px;

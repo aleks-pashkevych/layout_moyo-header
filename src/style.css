@@ -34,8 +34,7 @@ body {
   display: flex;
   align-items: center;
   list-style: none;
-  margin: 0;
-  gap: 21px;
+  margin: 0; 
 }
 
 .header__menu-link {

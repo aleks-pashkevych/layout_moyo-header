@@ -1,9 +1,12 @@
 @import 'normalize.css';
 
+:root {
+  --blue: #00acdc;
+}
+
 body {
   margin: 0 auto;
 
-  width: 1200px;
   font-family: Roboto, sans-serif;
   font-optical-sizing: auto;
   font-weight: 500;
@@ -11,37 +14,58 @@ body {
   font-size: 12px;
   line-height: 100%;
   letter-spacing: 0%;
-  text-transform: Uppercase;
 }
 
 .header {
   display: flex;
+  margin: 0 auto;
+  padding: 0 50px;
   justify-content: space-between;
   align-items: center;
-  margin: 0 auto;
-  width: 92%;
+  height: 60px;
+  text-transform: Uppercase;
+}
+
+.header__logo {
+  display: inline-flex;
 }
 
 .header__menu-list {
   display: flex;
-  gap: 21px;
+  align-items: center;
   list-style: none;
-  padding: 0;
   margin: 0;
+  gap: 21px;
 }
 
 .header__menu-link {
+  display: inline-block;
   text-decoration: none;
   color: #000;
   line-height: 60px;
+  margin: 0;
+}
+
+.header__logo-link :not(:first-child) {
+  margin-left: 20px;
 }
 
 .header__menu-link:hover {
-  color: #00acdc;
+  color: var(--blue);
 }
 
 .is-active {
-  color: #00acdc;
-  border-bottom: 3px solid #00acdc;
-  padding-bottom: 20px;
+  color: var(--blue);
+  position: relative;
+}
+
+.is-active::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 4px;
+  width: 100%;
+  border-radius: 8px;
+  background-color: var(--blue);
 }

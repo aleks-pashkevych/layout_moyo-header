@@ -34,7 +34,11 @@ body {
   display: flex;
   align-items: center;
   list-style: none;
-  margin: 0; 
+  margin: 0;
+}
+
+.header__menu-item:not(:first-child) {
+  margin-left: 20px;
 }
 
 .header__menu-link {
@@ -43,10 +47,6 @@ body {
   color: #000;
   line-height: 60px;
   margin: 0;
-}
-
-.header__logo-link :not(:first-child) {
-  margin-left: 20px;
 }
 
 .header__menu-link:hover {
